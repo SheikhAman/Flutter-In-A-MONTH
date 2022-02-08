@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
                     textDirection: TextDirection.ltr,
                     style: TextStyle(
                       decoration: TextDecoration.none,
-                      fontSize: 40.0,
+                      fontSize: 35.0,
                       fontFamily: 'HindMadurai',
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.italic,
@@ -33,7 +33,7 @@ class Home extends StatelessWidget {
                     textDirection: TextDirection.ltr,
                     style: TextStyle(
                       decoration: TextDecoration.none,
-                      fontSize: 40.0,
+                      fontSize: 20.0,
                       fontFamily: 'HindMadurai',
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.italic,
@@ -50,7 +50,7 @@ class Home extends StatelessWidget {
                     textDirection: TextDirection.ltr,
                     style: TextStyle(
                       decoration: TextDecoration.none,
-                      fontSize: 40.0,
+                      fontSize: 35.0,
                       fontFamily: 'HindMadurai',
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.italic,
@@ -63,7 +63,7 @@ class Home extends StatelessWidget {
                     textDirection: TextDirection.ltr,
                     style: TextStyle(
                       decoration: TextDecoration.none,
-                      fontSize: 40.0,
+                      fontSize: 20.0,
                       fontFamily: 'HindMadurai',
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.italic,
@@ -72,9 +72,23 @@ class Home extends StatelessWidget {
                 ),
               ],
             ),
+            Expanded(child: CustomImage()),
           ],
         ),
       ),
+    );
+  }
+}
+
+class CustomImage extends StatelessWidget {
+  const CustomImage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    AssetImage assetImage = AssetImage('images/github.jpg');
+    Image image = Image(image: assetImage);
+    return Container(
+      child: image,
     );
   }
 }
