@@ -7,9 +7,11 @@ void main() {
       title: 'Simple Interest Calculator App',
       home: SIForm(),
       theme: ThemeData(
+        appBarTheme: AppBarTheme(backgroundColor: Colors.indigo),
         colorScheme: ColorScheme.fromSwatch(
-                primarySwatch: Colors.indigo, brightness: Brightness.dark)
-            .copyWith(secondary: Colors.indigoAccent),
+          primarySwatch: Colors.indigo,
+          brightness: Brightness.dark,
+        ).copyWith(secondary: Colors.indigoAccent),
       ),
     ),
   );
